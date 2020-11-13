@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html lang= "pt">
-  <header>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
     <title>Página do FreeDom</title>
-    <meta charset = "UTF-8">
-  </header>
-  <body>
-  <h1> Página do Diogo "FreeDom" Mendes </h1>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="BootstrapDiogoMendes.css">
+    <script src="BootstrapDiogoMendes.js"></script>
+</head>
+<body class="bg-dark text-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <section class="navbar-name">Diogo "FreeDom" Mendes</section>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <section class="collapse navbar-collapse" id="navbarCollapse1">
+                <section class="navbar-nav">
+                    <a href="https://www.linkedin.com/in/diogo-mendes-180568150/" target="_blank" class="nav-item nav-link ">Linked In</a>
+                    <a href="https://www.twitch.tv/freedomtaa" target="_blank" class="nav-item nav-link ">Twitch Channel</a>
+                    <a href="https://www.youtube.com/channel/UClR5R-aXGgCQSyalrfeK6sA" target="_blank" class="nav-item nav-link ">Youtube</a>
+                </section>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Barra de pequisa">
+                    <button type="submit" class="btn btn-outline-light">Pesquisar</button>
+                </form>
+            </section>
+        </nav>
+        Do I know how to do this? Well I can do sections
+    </header>
+    <section>
+        <h3>Lista Ordenada</h3>
+        <ol>
+            <li>Ponto da lista ordenada</li>
+            <li>Lista desordenada
+                <ul>
+                    <li>Ponto da lista desordenada</li>
+                    <li>Outro ponto da lista desordenada
+                        <ol>
+                            <li>How deep can it go?</li>
+                            <li>Let's find out
+                                <ul>
+                                    <li>Pretty deep it seems</li>
+                                    <li>Possibly infinitely</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Outro ponto da lista ordenada</li>
+        </ol>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th>Disciplina</th>
+                <th>Nota</th>
+            </tr>
+            <tr>
+                <td>AED</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>AC</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>MBD</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>PP</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>ER</td>
+                <td>18</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <fieldset>
+            <label for="caixaDeTexto">Nome: </label>
+            <input type="text" id="caixaDeTexto" name="caixaDeTexto" placeholder="Put something in here">
+            <button onclick="onClickFunc()">Enviar</button>
+        </fieldset>
+    </section>
+    <footer>
+        <details>
+            <summary>I think I know a few things ;)</progress></summary>
+            <figure>
+                <img src="https://elearning.ual.pt/pluginfile.php/1/theme_adaptable/p1/1601573456/elearning_opt.jpg">
+                <figcaption>Just kidding, I'm just a student at UAL trying to study for a Web Development test.</figcaption>
+            </figure>
+            <label for="progressBar">I've studied about (20%)</label>
+            <progress id="progressBar" value="0.2"></progress>
+        </details>
+    </footer>
+</body>
 </html>
